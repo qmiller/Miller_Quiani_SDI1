@@ -1,10 +1,10 @@
 // JavaScript
 
-var yearBorn; declaration//
-yearBorn= 1984;//definition
+//var yearBorn; declaration//
+//yearBorn= 1984;//definition
 //storage container = value
 
-var age = 24; //declaring and defining on the same line
+//var age = 24; //declaring and defining on the same line
 
 
 /*
@@ -12,10 +12,14 @@ console.log(yearBorn)
 console.log("Hello World!")
  */
 
-alert(yearBorn)
+//alert(yearBorn);
 
-var firstName = "Quiani"
+//var firstName = "Quiani"
 
-var isStudent = false; //Boolean Variable
+//var isStudent = false; //Boolean Variable
 
-var phrase = 'I don\'t know \n You\'ll have to speak with the professor.';
+//var phrase = 'I don\'t know \n You\'ll have to speak with the professor.';
+
+var muppetNames = ["Kermit", "Miss Piggy", "Gonzo", "Rizzo"]; // 0, 1, 2, 3
+
+console.log(muppetNames;
