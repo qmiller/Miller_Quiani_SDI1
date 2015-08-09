@@ -61,4 +61,15 @@ var firstPart = 951;
 var secPart = 6470;
 
 var phoneNo = "(" + String(areaCode) + ")" + String(firstPart) + "-" + String(secPart);
-console.log(phoneNo);
+//console.log(phoneNo);
+
+//Assignement Operators
+var a = 3;
+//a += 4; //a = a + 4
+//a *= 4; //a = a * 4
+//a /= 4; //a = a / 4
+//a -= 4; //a = a - 4
+//a++ ; //a = a + 1 // a+=1
+a--; //a = a - 1 // a-=1
+
+console.log(a);
