@@ -38,4 +38,9 @@ var average = (quiz1 + quiz2 + quiz3 +quiz4)/4;
 var length = 7;
 var width = 6;
 var perimeter = length * 2 + width * 2;
-console.log(perimeter);
+//console.log(perimeter);
+
+//Arrays
+var orangeBins = [234, 567, 883];
+var total = orangeBins[0] + orangeBins[1] + orangeBins[2];
+console.log(total);
