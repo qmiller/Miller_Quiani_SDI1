@@ -41,6 +41,13 @@ var perimeter = length * 2 + width * 2;
 //console.log(perimeter);
 
 //Arrays
-var orangeBins = [234, 567, 883];
-var total = orangeBins[0] + orangeBins[1] + orangeBins[2];
-console.log(total);
+//var orangeBins = [234, 567, 883];
+//var total = orangeBins[0] + orangeBins[1] + orangeBins[2];
+//console.log(total);
+
+//Concatenating
+var firstName = "Quiani";
+var lastName = "Miller";
+var fullName = firstName + " " + lastName;
+console.log(fullName);
+
