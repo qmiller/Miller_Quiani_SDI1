@@ -16,10 +16,14 @@ var result = "Sparky is " + sparkyAge + " human years old which is " + actualAge
 console.log(result); //prints the statement
 */
 
+
 var slicesPizza = 8; //number of slices per pizza
-var partyGoers = 20; //number of people attending the party
-var pizzasOrdered = 10; //number of pizzas ordered
+var partyGoers = 10; //number of people attending the party
+var pizzasOrdered = 4; //number of pizzas ordered
 var numSlices = slicesPizza * pizzasOrdered / partyGoers; // calculates the number of slices each persons will eat
-var result = "Each person ate " + numSlices + " slices of pizza at the party."; //prints the result in a statement.
-console.log(result); //prints the result in the console.
+//var result = "Each person ate " + numSlices + " slices of pizza at the party."; //prints the result in a statement.
+//console.log(result); //prints the result in the console.
+var sparkySlices = slicesPizza * pizzasOrdered % partyGoers; //uses modulo operator to get the number of slices of pizza that Sparky gets
+var result = "Sparky got " + sparkySlices + " slices of pizza."; //prints the result in a statement
+console.log(result); //prints the result in the console. 
 
