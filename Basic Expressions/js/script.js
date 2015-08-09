@@ -46,8 +46,19 @@ var perimeter = length * 2 + width * 2;
 //console.log(total);
 
 //Concatenating
-var firstName = "Quiani";
-var lastName = "Miller";
-var fullName = firstName + " " + lastName;
-console.log(fullName);
+//var firstName = "Quiani";
+//var lastName = "Miller";
+//var fullName = firstName + " " + lastName;
+//console.log(fullName);
 
+//Casting
+var stringVar = "6";
+var result = 7 + Number(stringVar);
+//console.log(result);
+
+var areaCode = 757;
+var firstPart = 951;
+var secPart = 6470;
+
+var phoneNo = "(" + String(areaCode) + ")" + String(firstPart) + "-" + String(secPart);
+console.log(phoneNo);
