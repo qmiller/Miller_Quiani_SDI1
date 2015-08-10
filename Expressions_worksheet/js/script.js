@@ -41,3 +41,17 @@ var result = "You have spent a total of " + groceryTotal + " on groceries over 5
 console.log(result); //prints the result into the console.
 */
 
+
+//Discounts
+
+var originalPrice = 100;
+var discount = 10;
+var description = "watch";
+var salesTax = .05;
+var discountedPrice = originalPrice - originalPrice * (discount / 100);
+var tax = discountedPrice * salesTax + discountedPrice;
+
+var result = "Your " + description +  " was originally $" + originalPrice + ", but after a " + discount + "% discount, it is now $" + discountedPrice + " without tax, and $" + tax + " with tax.";
+
+console.log(result);
+
