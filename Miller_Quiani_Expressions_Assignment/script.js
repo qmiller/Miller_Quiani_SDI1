@@ -5,14 +5,15 @@
 
 var rent = 750;
 var cox = 175;
-var name;
-var numRoommates;
-var electric;
-var water;
-var trash;
-var gas;
+var name = prompt("Please enter your first name:");
+var numRoommates = prompt("How many roommates do you have?");
+var electric = prompt("How much is your electric bill?");
+var water = prompt ("How much is your water bill");
+var trash = prompt("How much is your sewer and trash bill?");
+var gas = prompt("How much is your gas bill?");
 var totalUtilities;
 var total;
+
 var utilities =[electric, water, trash, gas];
 
 
