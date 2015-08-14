@@ -5,6 +5,20 @@ SDI 1508
 Expressions Assignment
  */
 
+// variables
+var rent;
+var cox;
+var name;
+var numRoommates;
+var electric;
+var gas;
+var month;
+var utilities;
+var water;
+var trash;
+var totalUtilities;
+var total;
+var result;
 
 var rent = 750; //variable for the rent which does not change
 var cox = 175; //variable for the cox service which does not change
@@ -33,6 +47,6 @@ if(month == 1) { //if statement used to decide which bills to include
 var total = totalUtilities / numRoommates; //math done to get total that will need to be paid by each roommate.
 
 
-var result = name + " your monthly bill total is $" + totalUtilities + ". You have " + numRoommates + " roommates. Your total due this month is $" + total + "."; //variable created for printing out a statement.
+var result = name + " your monthly bill total is $" + totalUtilities + ". You have " + numRoommates + " roommates. Your total due this month is $" + total + "per person."; //variable created for printing out a statement.
 
 console.log(result);//console print out with all necessary information.
