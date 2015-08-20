@@ -46,13 +46,16 @@ if (name=="") {
             weight = prompt("Please enter your weight.");
         }
         waist = prompt("Please enter your waist measurement. \nMeasure your waist at the naval.");
-
+        if (waist == ""){
+            console.log("You are hard-headed sir and trying to mess up my code. I don't appreciate that.");
+            waist = prompt("Please enter your waist measurement.");
+        }
         factor1 = (Number(weight) * 1.082) + 94.42;
         factor2 = Number(waist) * 4.15;
         leanBody = factor1 - factor2;
         fatWeight = Number(weight) - leanBody;
         fatPercent = (fatWeight * 100) / Number(weight);
-        alert("male");
+        //alert("male"); //testing
 
     }else{
         weight = prompt("Please enter your weight.");
@@ -60,10 +63,30 @@ if (name=="") {
             console.log("You are hard-headed ma'am and trying to mess up my code. I don't appreciate that.");
             weight = prompt("Please enter your weight.");
         }
+
         waist = prompt("Please enter your waist measurement. \nMeasure your waist at the naval.");
+        if (waist == "") {
+            console.log("You are hard-headed ma'am and trying to mess up my code. I don't appreciate that.");
+            waist = prompt("Please enter your waist measurement.");
+        }
+
         wrist = prompt("Please enter your wrist measurement.");
+        if (wrist == "") {
+            console.log("You are hard-headed ma'am and trying to mess up my code. I don't appreciate that.");
+            wrist = prompt("Please enter your wrist measurement.");
+        }
+
         hip = prompt("Please enter your hip measurement");
+        if (hip == "") {
+            console.log("You are hard-headed ma'am and trying to mess up my code. I don't appreciate that.");
+            hip = prompt("Please enter your hip measurement");
+        }
+
         forearm = prompt("Please enter your forearm measurement");
+        if (hip == "") {
+            console.log("You are hard-headed ma'am and trying to mess up my code. I don't appreciate that.");
+            forearm = prompt("Please enter your forearm measurement");
+        }
 
         factor1 = (Number(weight) * 0.732) + 8.987;
         factor2 = Number(wrist) / 3.140;
@@ -73,5 +96,5 @@ if (name=="") {
         leanBody = factor1 + factor2 - factor3 - factor4 + factor5;
         fatWeight = Number(weight) - leanBody;
         fatPercent = (fatWeight * 100) / Number(weight);
-        alert("female");
+        //alert("female"); //testing
     }
