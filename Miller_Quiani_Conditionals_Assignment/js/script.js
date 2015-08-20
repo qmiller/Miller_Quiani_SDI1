@@ -23,21 +23,21 @@ var fatWeight;
 var fatPercent;
 
 
-name = prompt("Please enter you name: ");
+name = prompt("Please enter you name: "); //prompt to get user name
 if (name=="") {
 
     console.log("I asked you to enter your name please?!");
     name = prompt("Please enter you name: ");
 
-}
+}//if statement to check to make sure user entered a name
 
-    gender = prompt("Are you male or female. \nPlease enter 1 for male or 2 for female.");
+    gender = prompt("Are you male or female. \nPlease enter 1 for male or 2 for female."); //prompt to get user gender
     if (gender == ""){
         console.log("Please select you gender you are messing up my calculator!");
         gender = prompt("Are you male or female. \nPlease enter 1 for male or 2 for female.");
 
-    }
-        alert("Please enter only the a number going forward! Thank you.");
+    } //if statement to ensure user input gender
+        alert("Please enter only the a number going forward! All answers are in pounds and inches. Thank you."); //alert to inform the user of how to answer all questions.
 
     if (gender == 1) {
         weight = prompt("Please enter your weight.");
@@ -100,20 +100,20 @@ if (name=="") {
     }
 
 if (gender == 1 && fatPercent <= 24){
-   alert("skinny man");
-   //console.log(name + ", you sir have a current Body Fat Percentage of " + fatPercent + "%. You are currently healthy. Have a nice day.");
+   //alert("skinny man");
+   console.log(name + ", you sir have a current Body Fat Percentage of " + fatPercent + "%. You are currently healthy. Have a nice day.");
 
 }else if (gender == 1 && fatPercent > 24){
-   alert("fat man");
-    //console.log(name + ", you sir have a current Body Fat Percentage of " + fatPercent + "%. You a bit heavy.");
+    //alert("fat man");
+    console.log(name + ", you sir have a current Body Fat Percentage of " + fatPercent + "%. Would you like to go to the gym?");
 
 }else if (gender != 1 && fatPercent <= 32){
-    alert("skinny woman");
-    //console.log(name + ", you ma'am have a current Body Fat Percentage of " + fatPercent + "%. You are currently healthy. Have a nice day.");
+    //alert("skinny woman");
+    console.log(name + ", you ma'am have a current Body Fat Percentage of " + fatPercent + "%. You are currently healthy. Have a nice day.");
 
 }else{
-    alert("big woman");
-    //console.log(name + ", you ma'am have a current Body Fat Percentage of " + fatPercent + "%. Would you like to go to the gym?");
+    //alert("big woman");
+    console.log(name + ", you ma'am have a current Body Fat Percentage of " + fatPercent + "%. Would you like to go to the gym?");
 
 }
 
