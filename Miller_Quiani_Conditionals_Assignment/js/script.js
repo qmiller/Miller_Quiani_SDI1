@@ -98,3 +98,22 @@ if (name=="") {
         fatPercent = (fatWeight * 100) / Number(weight);
         //alert("female"); //testing
     }
+
+if (gender == 1 && fatPercent <= 24){
+   alert("skinny man");
+   //console.log(name + ", you sir have a current Body Fat Percentage of " + fatPercent + "%. You are currently healthy. Have a nice day.");
+
+}else if (gender == 1 && fatPercent > 24){
+   alert("fat man");
+    //console.log(name + ", you sir have a current Body Fat Percentage of " + fatPercent + "%. You a bit heavy.");
+
+}else if (gender != 1 && fatPercent <= 32){
+    alert("skinny woman");
+    //console.log(name + ", you ma'am have a current Body Fat Percentage of " + fatPercent + "%. You are currently healthy. Have a nice day.");
+
+}else{
+    alert("big woman");
+    //console.log(name + ", you ma'am have a current Body Fat Percentage of " + fatPercent + "%. Would you like to go to the gym?");
+
+}
+
