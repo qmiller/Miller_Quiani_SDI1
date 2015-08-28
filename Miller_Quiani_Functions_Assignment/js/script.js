@@ -51,79 +51,131 @@ function powerBall(min, max, num){
     return randomNum;
 }
 
-function lotto(min, max, num){
+function lotto(min, max){
 
     alert("Good luck, Here are your lottery numbers!!!");
-    var randomNum = [];
+        var ball1;
+        var ball2;
+        var ball3;
+        var ball4;
+        var ball5;
+        var ball6;
 
-    for (var i = 0; i < num; i++) {
+        ball1 = Math.random() * (max - min) + min;
+        ball1 = Math.round((ball1));
 
-        randomNum[i] = Math.random() * (max - min) + min;
-        randomNum[i] = Math.round(randomNum [i]);
+        randomNum =  Math.random() * (max - min) + min;
+        randomNum =  Math.round((randomNum));
 
-    }
-    console.log(randomNum);
-    return randomNum;
-}
+        if(randomNum != ball1) {
+            ball2 = randomNum;
+        }else{
 
-function powerBall2(min, max, num){
-    var randomNum;
-    var powerball;
-    for(var i = 0 ; i < num; ++i) {
-        var ball1 = 0;
-        var ball2 = 0;
-        var ball3 = 0;
-        var ball4 = 0;
-        var ball5 = 0;
-        var ballCount = 0;
-
-        while(ballCount<num){
-
-            randomNum = Math.random() * (max - min) + min;
-            randomNum = Math.round((randomNum));
-
-
-            switch(powerball){
-
-                case 0:
-                    ball1 = randomNum;
-                    num++;
-                    break;
-
-                case  1:
-                    if(randomNum != ball1) {
-                        ball2 = randomNum;
-                        num++;
-                    }
-                    break;
-
-                case 2:
-                    if(randomNum != ball1 && randomNum != ball2) {
-                        ball3 = randomNum;
-                        num++;
-                    }
-                    break;
-
-                case 3:
-                    if(randomNum != ball1 && randomNum != ball2 && randomNum != ball3){
-                        ball4 = randomNum;
-                        num++;
-                    }
-                    break;
-                case 4:
-                    if(randomNum != ball1 && randomNum != ball2 && randomNum != ball3 && randomNum != ball4){
-                        ball5 = randomNum;
-                        num++;
-                    }
-                    break;
-
-
-            }
+            randomNum =  Math.random() * (max - min) + min;
+            randomNum =  Math.round((randomNum));
         }
+        randomNum =  Math.random() * (max - min) + min;
+        randomNum =  Math.round((randomNum));
 
-        console.log(ball1, ball2, ball3, ball4, ball5);
-    }
+        if(randomNum != ball1 && randomNum != ball2){
+            ball3 = randomNum;
+        }else{
+
+            randomNum =  Math.random() * (max - min) + min;
+            randomNum =  Math.round((randomNum));
+        }
+        randomNum =  Math.random() * (max - min) + min;
+        randomNum =  Math.round((randomNum));
+
+        if(randomNum != ball1 && randomNum != ball2 && randomNum != ball3){
+            ball4 = randomNum;
+        }else{
+
+            randomNum =  Math.random() * (max - min) + min;
+            randomNum =  Math.round((randomNum));
+        }
+        randomNum =  Math.random() * (max - min) + min;
+        randomNum =  Math.round((randomNum));
+
+        if(randomNum != ball1 && randomNum != ball2 && randomNum != ball3 && randomNum != ball4){
+            ball5 = randomNum;
+        }else{
+
+            randomNum =  Math.random() * (max - min) + min;
+            randomNum =  Math.round((randomNum));
+        }
+        randomNum =  Math.random() * (max - min) + min;
+        randomNum =  Math.round((randomNum));
+
+        if(randomNum != ball1 && randomNum != ball2 && randomNum != ball3 && randomNum != ball4 && randomNum != ball5){
+            ball6 = randomNum;
+        }else{
+
+            randomNum =  Math.random() * (max - min) + min;
+            randomNum =  Math.round((randomNum));
+        }
+    console.log("Your lottery numbers are " + ball1 +", " + ball2 + ", " + ball3 + ", " + ball4 + ", " + ball5 + " and " + ball6 + ".");
 }
+
+function powerBall2(min, max){
+        var ball1;
+        var ball2;
+        var ball3;
+        var ball4;
+        var ball5;
+        var pBall;
+
+        ball1 = Math.random() * (max - min) + min;
+        ball1 = Math.round((ball1));
+
+    randomNum =  Math.random() * (max - min) + min;
+    randomNum =  Math.round((randomNum));
+
+        if(randomNum != ball1) {
+            ball2 = randomNum;
+            }else{
+
+            randomNum =  Math.random() * (max - min) + min;
+            randomNum =  Math.round((randomNum));
+        }
+    randomNum =  Math.random() * (max - min) + min;
+    randomNum =  Math.round((randomNum));
+
+        if(randomNum != ball1 && randomNum != ball2){
+            ball3 = randomNum;
+            }else{
+
+            randomNum =  Math.random() * (max - min) + min;
+            randomNum =  Math.round((randomNum));
+        }
+    randomNum =  Math.random() * (max - min) + min;
+    randomNum =  Math.round((randomNum));
+
+        if(randomNum != ball1 && randomNum != ball2 && randomNum != ball3){
+            ball4 = randomNum;
+            }else{
+
+            randomNum =  Math.random() * (max - min) + min;
+            randomNum =  Math.round((randomNum));
+        }
+    randomNum =  Math.random() * (max - min) + min;
+    randomNum =  Math.round((randomNum));
+
+    if(randomNum != ball1 && randomNum != ball2 && randomNum != ball3 && randomNum != ball4){
+        ball5 = randomNum;
+    }else{
+
+        randomNum =  Math.random() * (max - min) + min;
+        randomNum =  Math.round((randomNum));
+    }
+
+    pBall =  Math.random() * (35 - 1) + 1;
+    pBall =  Math.round((pBall));
+
+
+        console.log("Your Powerball numbers are " + ball1 +", " + ball2 + ", " + ball3 + ", " + ball4 + " and " + ball5 + ". Your Powerball number is " + pBall + ".");
+}
+
 
 
 //math.random() * (max - min ) + min
@@ -137,4 +189,4 @@ function powerBall2(min, max, num){
 //powerBall();
 //lotto();
 
-(gameType == true) ? lotto(1, 53, 6) : powerBall2(1, 59, 5);
+(gameType == true) ? lotto(1, 53) : powerBall2(1, 59);
