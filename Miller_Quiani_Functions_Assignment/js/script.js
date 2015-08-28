@@ -188,5 +188,5 @@ if (gameType == true) { // if statement to run either lotto numbers or powerball
     console.log("Your numbers are " + lottoBalls[0] + ", " + lottoBalls[1] + ", " + lottoBalls[2] + ", " + lottoBalls[3] + ", " + lottoBalls[4] + ", and " + lottoBalls[5]+ "."); //prints out the lucky numbers for the lotto.
 }else {
     var pwrBalls = powerBall2(1, 59);
-    console.log("Your numbers are " + pwrBalls[0] + ", " + pwrBalls[1] + ", " + pwrBalls[2] + ", " + pwrBalls[3] + ", " + pwrBalls[4] + ". Your Powerball number is " + pwrBalls[5]+ "."); //prints out the lucky numbers for the powerball as well as the powerball number. 
+    console.log("Your numbers are " + pwrBalls[0] + ", " + pwrBalls[1] + ", " + pwrBalls[2] + ", " + pwrBalls[3] + ", " + pwrBalls[4] + ". Your Powerball number is " + pwrBalls[5]+ "."); //prints out the lucky numbers for the powerball as well as the powerball number.
 }
